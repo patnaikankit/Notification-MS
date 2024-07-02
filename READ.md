@@ -1,0 +1,3 @@
+## Ticket Booking Notification Microservice
+
+The Ticket Booking Notification Microservice is a dedicated service designed to handle the sending of notification emails for ticket bookings. It processes messages from a RabbitMQ queue, where each message contains details about a booking, such as the recipient's email, subject, and the booking information. Upon receiving a message, the service parses the data and sends an email notification to the specified recipient.
