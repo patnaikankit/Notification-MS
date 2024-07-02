@@ -1,0 +1,17 @@
+[
+    {
+        "flightId": "FL123",
+        "totalSeats": 100,
+        "price": 150
+    },
+    {
+        "flightId": "FL456",
+        "totalSeats": 50,
+        "price": 200
+    },
+    {
+        "flightId": "FL789",
+        "totalSeats": 200,
+        "price": 100
+    }
+]

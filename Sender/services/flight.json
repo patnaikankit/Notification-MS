@@ -1,0 +1,17 @@
+[
+    {
+        "flightId": 1,
+        "noOfSeats": 100,
+        "price": 150
+    },
+    {
+        "flightId": 2,
+        "noOfSeats": 50,
+        "price": 200
+    },
+    {
+        "flightId": 3,
+        "noOfSeats": 200,
+        "price": 100
+    }
+]
