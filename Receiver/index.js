@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const express = require('express');
 const config = require('./config/server-config.js');
-const { PORT } = config;
+const { PORT, SENDER_MAIL } = config;
 const apiRoutes = require('./routes/index.js')
 const amqplib = require('amqplib');
 const { MailService } = require('./service/index.js');
@@ -27,7 +27,7 @@ const connectQueue = async () => {
 
                     console.log('Received message:', messageObject);
                     await MailService.sendMail(
-                        "email@gmail.com",
+                        SENDER_MAIL,
                         messageObject.recepientEmail,
                         messageObject.subject,
                         messageObject.text
